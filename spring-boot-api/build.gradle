@@ -9,6 +9,10 @@ group = 'sandbox'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+bootWar {
+	archiveFileName  = 'api.war'
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor

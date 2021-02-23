@@ -1,0 +1,10 @@
+version: '3'
+services:
+  application:
+    container_name: api-application
+    build: ./docker/java
+    image: openjdk-11:1.0.0
+    expose:
+      - "8080"
+    ports:
+      - "8000:8080"
