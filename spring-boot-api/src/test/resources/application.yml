@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    sqlScriptEncoding: UTF-8
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myschema
+    username: myuser
+    password: 1234
+logging:
+  level:
+    sql: debug
