@@ -33,7 +33,13 @@ public class Response<T> {
     return response;
   }
 
+  public static <T> Response<T> internalServerError() {
+    Response<T> response = new Response<>();
+    response.setStatus(Status.INTERNAL_SERVER_ERROR);
+    return response;
+  }
+
   public enum Status {
-    OK, BAD_REQUEST, NOT_FOUND
+    OK, BAD_REQUEST, NOT_FOUND, INTERNAL_SERVER_ERROR
   }
 }
