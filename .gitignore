@@ -1,3 +1,6 @@
+## add.
+spring-boot-api/docker/db/data/*
+
 # Compiled class file
 *.class
 

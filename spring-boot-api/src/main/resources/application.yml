@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    sqlScriptEncoding: UTF-8
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myschema
+    username: myuser
+    password: 1234
+  mvc:
+    ## 存在しないパスへのアクセスが、静的ファイルではなくExceptionHandlerに向かうようにする。
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  messages:
+    basename: messages ## ファイル名（拡張子不要）
+    cache-duration: -1
+    encoding: UTF-8
+logging:
+  level:
+    sql: debug
+qiita:
+  url: https://qiita.com
